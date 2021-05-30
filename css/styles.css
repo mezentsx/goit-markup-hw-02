@@ -10,6 +10,9 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+  --bgd-color: #2f303a;
+  --grey-color: #f5f4fa;
 }
 
 body {
@@ -29,7 +32,7 @@ body {
 }
 
 .logo-studio {
-  color: #000000;
+  color: var(--primary-black-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -66,7 +69,8 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contact .contact-link:hover,
-.contact .contact-link:focus {
+.contact .contact-link:focus,
+.site-nav .active-link {
   color: var(--accent-color);
 }
 
@@ -79,6 +83,10 @@ body {
 }
 
 /* Hero */
+
+.hero {
+  background-color: var(--bgd-color);
+}
 
 .hero-title {
   color: var(--primary-white-color);
@@ -100,20 +108,36 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: 0;
 }
 
 .button-portfolio {
-  background-color: #f5f4fa;
+  background-color: var(--grey-color);
   cursor: pointer;
+  outline: none;
+  border: 0;
+}
+
+.button-all {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  outline: none;
+  border: 0;
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  outline: none;
+  border: 0;
 }
 
 /* Section */
+
+.team {
+  background-color: var(--grey-color);
+}
 
 .section-title {
   font-weight: 700;
@@ -168,6 +192,14 @@ body {
 }
 
 /* Footer */
+
+.footer {
+  background-color: var(--bgd-color);
+}
+
+.address {
+  font-style: inherit;
+}
 
 .address .town {
   color: var(--primary-white-color);
